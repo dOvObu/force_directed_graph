@@ -210,9 +210,9 @@ std::istream& operator>>(std::istream& stream, Graph& graph)
 
 int main(int argc, char* argv[])
 {
-	float const WIDTH = 800;
-	float const HEIGHT = 600;
-	sf::RenderWindow window({ (unsigned)WIDTH, (unsigned)HEIGHT }, "heh");
+	unsigned const WIDTH = 800;
+	unsigned const HEIGHT = 600;
+	sf::RenderWindow window({ WIDTH, HEIGHT }, "heh");
 	Graph graph;
 	std::ifstream file("graph_data.txt");
 	file >> graph;
